@@ -82,3 +82,29 @@ function imgClick(e) {
   //Change the opacity to opacity var
   e.target.style.opacity = opacity;
 }
+
+
+
+// Animation
+$(document).ready(function() {
+
+  function isScrolledIntoView(elem) {
+  var docViewTop = $(window).scrollTop();
+  var docViewBottom = docViewTop + $(window).height();
+
+  var elemTop = $(elem).offset().top;
+  var elemBottom = elemTop + $(elem).height();
+
+  return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+
+  $(window).scroll(function () {
+      $('.animate').each(function () {
+          if (isScrolledIntoView(this)) {
+              $(this).addClass('start')
+          }
+      });
+
+  });
+  
+});

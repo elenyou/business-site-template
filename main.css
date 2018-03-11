@@ -190,7 +190,7 @@ body {
 }
 .main-line {
     background-color: #EDE140;
-    height: 15em;
+    height: 10em;
     margin: 15% auto;
     width: 1.5px;
 }
@@ -399,10 +399,10 @@ body {
 }
 
 .contact-us-address {
-    width: 30%;
+    width: 40%;
     text-align: center;
     background-color: #EDE140;
-    height: 401px;
+    height: 402px;
 }
 
 .contact-section form {
@@ -495,6 +495,85 @@ body {
 
 .footer-icon img:hover {
     opacity: 0.6;
+}
+
+
+/* ANIMATION */
+.menu_brand {
+    opacity: 0;
+    animation: 1s 0.5s a-down ease-in-out forwards;
+    }
+    
+@keyframes a-down {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-100px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+  
+  .main-icons {
+    opacity: 0;
+    animation: 1s 0.5s a-left ease-in-out forwards;
+  }
+  
+  .main-image {
+    opacity: 0;
+    animation: 1.2s 0.5s a-right ease-in-out forwards;
+  }
+  
+  .main-text {
+    opacity: 0;
+    animation: 1.6s 0.5s a-right ease-in-out forwards;
+  }
+  
+  @keyframes a-right {
+    0% {
+      opacity: 0;
+      transform: translate3d(100px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes a-left {
+    0% {
+      opacity: 0;
+      transform: translate3d(-100px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+.main-line {
+    opacity: 0;
+    animation: 2s 0.5s a-up ease-in-out forwards;
+}
+    
+@keyframes a-up {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 300px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.animate {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+    transition: all 1s ease;
+}
+.animate.start {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
 
 /* RESPONSIVE */
