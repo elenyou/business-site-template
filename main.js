@@ -13,7 +13,7 @@
           menu.classList.add('menu--active');
           menuList.classList.add('menu__list--active');
           burger.classList.add('burger--close');
-          for (var i = 0, ii = menuItems.length; i < ii; i++) {
+          for (var i = 0; i < menuItems.length; i++) {
             menuItems[i].classList.add('menu__item--active');
           }
           
@@ -22,7 +22,7 @@
           menu.classList.remove('menu--active');
           menuList.classList.remove('menu__list--active');
           burger.classList.remove('burger--close');
-          for (var i = 0, ii = menuItems.length; i < ii; i++) {
+          for (var i = 0; i < menuItems.length; i++) {
             menuItems[i].classList.remove('menu__item--active');
           }
           
@@ -37,6 +37,12 @@
       var init = function() {
         bindActions();
       };
+      
+      for (var i = 0; i < menuItems.length; i++) {
+        menuItems[i].addEventListener('click', () => {
+          toggleMenu();
+        })
+      }
       
       return {
         init: init
