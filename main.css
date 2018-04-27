@@ -5,6 +5,7 @@
     --main-and-opacity: rgba(107, 211, 220, 0.9);
     --main-gradient: linear-gradient(111.24892639023471deg, rgba(86, 216, 228,1) 5.533854166666667%,rgba(159, 1, 234,1) 96.67968749999999%);
     --menu-gradient: linear-gradient(111.24892639023471deg, rgba(1, 96, 186,1) 5.533854166666667%,rgba(0, 0, 0,1) 96.67968749999999%);
+    --shadow: 9px 9px 28px -10px rgba(0,0,0,0.75);
 
 }
 
@@ -19,11 +20,18 @@ body {
     margin: 0;   
 }
 
+.wrapper {
+    background: url(img/1.jpg);
+    background-size: cover;
+}
+
 .menu_brand {
     text-align: center;
 }
 
 .menu_brand h1{
+    margin: 0;
+    padding-top: 3%;
     font-size: 3em;
     text-transform: uppercase;
     color:  var(--second-color);
@@ -194,7 +202,8 @@ body {
     height: 400px;
     width: 600px;
     background: url(img/main.jpg) no-repeat center;
-    background-size: contain;
+    background-size: cover;
+    box-shadow: var(--shadow);
 }
 
 .main-image-2 {
@@ -253,11 +262,12 @@ body {
     width: 100%;
 }
 
-.about-image {
+.about-image img {
     height: 400px;
     width: 600px;
-    background: url(img/about.jpg) no-repeat center;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    box-shadow: var(--shadow);
 }
 
 .about-text {
@@ -313,26 +323,23 @@ body {
     flex-direction: column;
     width: 100%;
 }
+
 .services-item {
     display: flex;
     justify-content: center;
 }
+
 .services-image {
-    height: 400px;
-    width: 80%;
+    padding: 1% 0;
 }
-.one .services-image {
-    background: url(img/serv_1.jpg) no-repeat center;
-    background-size: contain;
+.services-image img{
+    height: 300px;
+    width: 95%;
+    background-size: cover;
+    box-shadow: var(--shadow);
+    background-position: center;
 }
-.two .services-image {
-    background: url(img/serv_2.jpg) no-repeat center;
-    background-size: contain;
-}
-.three .services-image {
-    background: url(img/serv_3.jpg) no-repeat center;
-    background-size: contain;
-}
+
 .services-text {
     width: 70%;
     display: flex;
@@ -423,6 +430,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 0 7%;
+    padding-bottom: 5%;
 }
 
 .contact-us-main-text {
@@ -532,7 +540,6 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 5%;
     padding: 2% 2% 0 2%;
 } 
 
@@ -703,7 +710,7 @@ body {
         font-size: 1.8em;
         height: 300px;
     }
-    .about-image {
+    .about-image img {
         height: 300px;
         width: 500px;
     }
@@ -724,7 +731,7 @@ body {
         height: 5em;
         margin: 2% auto; 
     }
-    .services-image {
+    .services-image img {
         height: 300px;
         width: 80%;
     }
@@ -775,12 +782,11 @@ body {
         font-size: 1.4em;
         height: 350px;
     }
-    .about-image {
+    .about-image img {
         height: 250px;
         width: 350px;
     }
     .about-text {
-        width: 40%;
         margin-right: 250px;
     }
     .about-more {
@@ -805,13 +811,12 @@ body {
     .services-content {
         width: 70%;
     }
-    .services-image {
+    .services-image img {
         height: 250px;
     }
     .services-text-big h1 {
         font-size: 1em;
     }
-    
     .services-text-small {
         font-size: 0.6em;
     }
@@ -876,27 +881,17 @@ body {
         font-size: 1.2em;
         height: 250px;
     }
-    .about-image {
-        height: 250px;
-        width: 300px;
-    }
     .about-text {
         width: 60%;
         margin-right: 0;
     }
     .about-more {
         margin-left: 0;
-        margin-top: -20px;
-        font-size: 0.5em;
-    }
-    .about-line {
-        height: 3em;
     }
     .services-main-text {
-        height: 250px;
         font-size: 1.2em;
     }
-    .services-image {
+    .services-image img {
         height: 100px;
     }
     .services-text-big h1 {
@@ -919,7 +914,6 @@ body {
     }
     .services-line {
         height: 3em;
-        margin: 5% auto; 
     }
     .footer-text p{
         font-size: 0.4em;
@@ -949,7 +943,7 @@ body {
     .main-small-text p {
         font-size: 0.3em; 
     }
-    .about-image {
+    .about-image img {
         height: 150px;
         width: 220px;
     }
@@ -961,21 +955,11 @@ body {
         font-size: 0.6em;
         height: 100px;
     }
-    .services-image {
-        height: 100px;
-    }
     .services-text-big h1 {
         font-size: 0.4em;
     }
     .services-text-small {
         font-size: 0.3em;
-    }
-    .one .services-text-big,
-    .three .services-text-big {
-        margin-left: -20px;
-    }
-    .two .services-text-big {
-        margin-right: -20px;
     }
     .projects-main-text {
         font-size: 0.6em;
