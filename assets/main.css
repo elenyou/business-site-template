@@ -77,6 +77,7 @@ body {
     .about__content--text {
       width: 60rem;
       margin-top: -10rem;
+      margin-right: 20rem;
       text-align: center; }
       @media only screen and (max-width: 736px) {
         .about__content--text {
