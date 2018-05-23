@@ -5,225 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/main.css">
     <title>Business template</title>
 </head>
 <body>
-    <div class="wrapper">
-        <nav class="navbar">
-            <div class="menu_brand">
-                <h1>Company</h1>
-            </div>
-            <div class="burger">
-                <div class="burger__patty"></div>
-                <div class="burger__patty"></div>
-                <div class="burger__patty"></div>
-            </div>
-            <div class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="#main" class="menu__link">Main</a></li>
-                    <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
-                    <li class="menu__item"><a href="#services" class="menu__link">Services</a></li>
-                    <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
-                    <li class="menu__item"><a href="#contact" class="menu__link">Contact Us</a></li>
-                </ul>
-            </div>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>About</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Services</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Projects</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact Us</a></li>
+            </ul>
         </nav>
+    </div>
+    <div class="wrapper">
         <div class="main" id="main">
-            <div class="main-icons">
-                <div class="icon">
-                    <a href="#">
-                        <img src="img/phone.png" alt="phone">
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="#">
-                        <img src="img/mail.png" alt="mail">
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="#">
-                        <img src="img/map.png" alt="phone">
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="#">
-                        <img src="img/share.png" alt="phone">
-                    </a>
-                </div>
+            <div class="icon-vertical">
+                <a href="#" class="icon-vertical__link">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="#" class="icon-vertical__link">
+                    <i class="fas fa-map"></i>
+                </a>
+                <a href="#" class="icon-vertical__link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="icon-vertical__link">
+                     <i class="fas fa-share-alt"></i>
+                </a>
             </div>
-            <div class="main-content">
-                <div class="main-image">
-                    <div class="main-image-1"></div>
-                    <div class="main-image-2"></div>
-                </div>
-                <div class="main-text">
-                    <div class="main-name">
-                        <h1>Maecenas et quam</h1>
-                    </div>
-                    <div class="main-small-text">
-                        <p>Pellentesque elementum mauris id tellus volutpat consequat.<br> Quisque consectetur convallis metus eget pharetra.</p>
-                    </div>
-                    <div class="main-line"></div>
-                </div>
-                </div>
+            <div class="main__content">
+                <h1 class="main__content--text heading">Maecenas et quam</h1>
+                <p class="main__content--text paragraph">Pellentesque elementum mauris id tellus volutpat consequat.<br> Quisque consectetur convallis metus</p>
+                <div class="line-white"></div>
+            </div>
         </div>
         <div class="about" id="about">
-            <div class="about-main-text">
-                <h1>About</h1>
+            <div class="about__text animate">
+                <h1 class="vert-text">About</h1>
             </div>
-            <div class="about-content">
-                <div class="about-image animate">
-                    <img src="img/about.jpg" alt="business meeting image">
+            <div class="about__content">
+                <img class="about__content--image image animate" src="assets/img/about.jpg" alt="business meeting image">
+                <div class="about__content--text box-blue animate">
+                    <h2 class="heading__secondary">Maecenas et quam sem</h2>
+                    <p class="paragraph__secondary">Quisque convallis est id est pulvinar, ut posuere risus sodales. Pellentesque suscipit, erat vitae facilisis convallis, ex sapien tempor tellus, sed suscipit est massa sed felis.</p>
                 </div>
-                <div class="about-text animate">
-                    <h2>Maecenas et quam sem</h2>
-                    <p>Quisque convallis est id est pulvinar, ut posuere risus sodales. Pellentesque suscipit, erat vitae facilisis convallis, ex sapien tempor tellus, sed suscipit est massa sed felis.</p>
-                </div>
-                <div class="about-more animate">
-                    <a href="#">Find more</a>
-                </div>
+                <a class="link-more box-violet animate" href="#">Find more</a>
             </div>
         </div>
-        <div class="about-line animate"></div>
+        <div class="line-violet"></div>
         <div class="services" id="services">
-            <div class="services-main-text">
-                <h1>Services</h1>
+            <div class="services__text animate">
+                <h1 class="vert-text">Services</h1>
             </div>
-            <div class="services-content">
-                <div class="services-item one animate">
-                    <div class="services-image">
-                        <img src="img/serv_1.jpg" alt="laptop">
-                    </div>
-                    <div class="services-text">
-                        <div class="services-text-big">
-                            <h1>Maecenas et quam</h1>
-                        </div>
-                        <div class="services-text-small">
-                            <p>Quisque convallis est id est pulvinar, ut posuere risus sodales. Pellentesque suscipit, erat vitae facilisis convallis, ex sapien tempor tellus, sed suscipit est massa sed felis.</p>
-                        </div>
-                    </div>
+            <div class="services__content">
+                <div class="card animate">
+                    <i class="fas fa-desktop icon-blue"></i>
+                    <h1 class="heading__small">Maecenas et quam</h1>
+                    <p class="paragraph__small">Quisque convallis est id est pulvinar, ut posuere risus sodales. Pellentesque suscipit, erat vitae facilisis convallis, ex sapien tempor tellus, sed suscipit est massa sed felis.</p>
+                    <a class="link-more__small box-violet__small" href="#">Find more</a>
                 </div>
-                <div class="services-item two animate">
-                    <div class="services-text">
-                        <div class="services-text-big">
-                            <h1>Maecenas et quam</h1>
-                        </div>
-                        <div class="services-text-small">
-                            <p>Quisque convallis est id est pulvinar, ut posuere risus sodales. Pellentesque suscipit, erat vitae facilisis convallis, ex sapien tempor tellus, sed suscipit est massa sed felis.</p>
-                        </div>
-                    </div>
-                    <div class="services-image">
-                        <img src="img/serv_2.jpg" alt="tablet">
-                    </div>
+                <div class="card animate">
+                    <i class="fas fa-mobile-alt icon-blue"></i>
+                    <h1 class="heading__small">Maecenas et quam</h1>
+                    <p class="paragraph__small">Quisque convallis est id est pulvinar, ut posuere risus sodales. Pellentesque suscipit, erat vitae facilisis convallis, ex sapien tempor tellus, sed suscipit est massa sed felis.</p>
+                    <a class="link-more__small box-violet__small" href="#">Find more</a>
                 </div>
-                <div class="services-item three  animate">
-                    <div class="services-image">
-                        <img src="img/serv_3.jpg" alt="book">
-                    </div>
-                    <div class="services-text">
-                        <div class="services-text-big">
-                            <h1>Maecenas et quam</h1>
-                        </div>
-                        <div class="services-text-small">
-                            <p>Quisque convallis est id est pulvinar, ut posuere risus sodales. Pellentesque suscipit, erat vitae facilisis convallis, ex sapien tempor tellus, sed suscipit est massa sed felis.</p>
-                        </div>
-                    </div>
+                <div class="card  animate">
+                    <i class="fas fa-chart-pie icon-blue"></i>
+                    <h1 class="heading__small">Maecenas et quam</h1>
+                    <p class="paragraph__small">Quisque convallis est id est pulvinar, ut posuere risus sodales. Pellentesque suscipit, erat vitae facilisis convallis, ex sapien tempor tellus, sed suscipit est massa sed felis.</p>
+                    <a class="link-more__small box-violet__small" href="#">Find more</a>
                 </div>
             </div>
-        </div>
-        <div class="services-line  animate"></div>
+        </div> 
         <div class="projects" id="projects">
-            <div class="projects-main-text">
-                <h1>Projects</h1>
+            <div class="projects__text animate">
+                <h1 class="vert-text">Projects</h1>
             </div>
-            <div class="projects-content">
-                    <div class="main-img animate">
-                            <img src="img/pr_1.jpg" id="current">
+            <div class="projects__content ">
+                <div class="projects__content--mainimg animate">
+                    <img src="assets/img/pr_1.jpg" id="current">
+                </div>
+                <div class="projects__content--imgs imgs animate">
+                    <img src="assets/img/pr_1.jpg">
+                    <img src="assets/img/pr_2.jpg">
+                    <img src="assets/img/pr_3.jpg">
+                    <img src="assets/img/pr_4.jpg">
+                    <img src="assets/img/pr_5.jpg">
+                    <img src="assets/img/pr_6.jpg">
+                    <img src="assets/img/pr_7.jpg">
+                    <img src="assets/img/pr_8.jpg">
+                </div>
+            </div>
+        </div> 
+        <div class="contact" id="contact">
+            <div class="contact__text animate">
+                <h1 class="vert-text">Contact</h1>
+            </div>
+            <div class="contact__content ">
+                <div class="contact__content--address animate">
+                    <h1 class="heading__blue">Nullam volutpat massa neque</h1>
+                    <h2 class="heading__small">Address:</h2>
+                    <p class="paragraph__secondary">777 Address, Toronto, Canada</p>
+                    <h2 class="heading__small">Phone:</h2>
+                    <p class="paragraph__secondary">226-687-7986</p>
+                </div>
+                <form class="contact__content--form form animate">
+                    <div class="form__group">
+                        <label for="name" class="label">Name</label>
+                        <input id="name" type="text" name="name" class="input">
                     </div>
-                    <div class="imgs animate">
-                        <img src="img/pr_1.jpg">
-                        <img src="img/pr_2.jpg">
-                        <img src="img/pr_3.jpg">
-                        <img src="img/pr_4.jpg">
-                        <img src="img/pr_5.jpg">
-                        <img src="img/pr_6.jpg">
-                        <img src="img/pr_7.jpg">
-                        <img src="img/pr_8.jpg">
+                    <div class="form__group">
+                        <label for="email"  class="label">Email</label>
+                        <input id="email" type="text" name="email" class="input">
                     </div>
-            </div>
-        </div>
-        <div class="services-line animate"></div>
-        <div class="contact-us" id="contact">
-            <div class="contact-us-main-text">
-                <h1>Contact</h1>
-            </div>
-            <div class="contact-us-address animate">
-                <h1>Nullam volutpat massa neque</h1>
-                <h2>Address:</h2>
-                <p>777 Address, Toronto, Canada</p>
-                <h2>Phone:</h2>
-                <p>226-687-7986</p>
-            </div>
-            <div class="contact-form  animate">
-                <section class="contact-section">
-                    <form class="form">
-                        <div class="id">
-                            <div class="name">
-                                <label for="name">Name</label>
-                                <input id="name" type="text" name="name">
-                            </div>
-                            <div class="email">
-                                <label for="email">Email</label>
-                                <input id="email" type="text" name="email">
-                            </div>
-                        </div>
-                        <div class="subject">
-                            <label for="subject">Subject</label>
-            
-                            <input id="subject" type="text" name="subject">
-                        </div>
-                        <div class="content">
-                            <label id="contect" for="content">Content</label>
-            
-                            <textarea name="content" id="" cols="30" rows="10"></textarea>
-                            <button type="submit">SUBMIT</button>
-                        </div>
-                    </form>
-                </section>
+                    <div class="form__group">
+                        <label for="subject"  class="label">Subject</label>
+                        <input id="subject" type="text" name="subject" class="input">
+                    </div>
+                    <div class="form__group">
+                        <label id="contect" for="content" class="label">Content</label>
+                        <textarea name="content" id="" cols="20" rows="3" class="input"></textarea>
+                    </div>
+                    <button type="submit" class="btn animate">SUBMIT</button>
+                </form>
             </div>
         </div>
     </div>
     <footer>
         <div class="footer">
-            <div class="footer-icons">
-                <div class="footer-icon">
-                    <a href="#">
-                        <img src="img/phone.png" alt="phone">
-                    </a>
-                </div>
-                <div class="footer-icon">
-                    <a href="#">
-                        <img src="img/mail.png" alt="mail">
-                    </a>
-                </div>
-                <div class="footer-icon">
-                    <a href="#">
-                        <img src="img/map.png" alt="phone">
-                    </a>
-                </div>
-                <div class="footer-icon">
-                    <a href="#">
-                        <img src="img/share.png" alt="phone">
-                    </a>
-                </div>
-            </div>
-            <div class="footer-text">
-                <p>2018@ developed by Lena</p>
+            <div class="icon">
+                <a href="#" class="icon__link">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="#" class="icon__link">
+                    <i class="fas fa-map"></i>
+                </a>
+                <a href="#" class="icon__link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="icon__link">
+                    <i class="fas fa-share-alt"></i>
+                </a>
             </div>
         </div>
-    </footer>
-
+    </footer> 
+    
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
