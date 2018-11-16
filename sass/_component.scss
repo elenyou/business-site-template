@@ -72,12 +72,12 @@
     width: 2px;
     background-color: $color-main;
     margin: auto;
-    
+
 }
 
 //TYPOGRAPHY
 .heading {
-    font-size: 7rem;
+    font-size: 8rem;
     text-transform: uppercase;
     color: $color-white;
     padding: 1rem 0;
@@ -101,9 +101,9 @@
     &__blue {
         font-size: 3.5rem;
         text-transform: uppercase;
-        color: $color-white; 
+        color: $color-white;
         background-color: $color-secondary;
-        padding: 1rem 1.5rem;
+        padding: 1rem 3rem;
         margin-bottom: 3rem;
     }
 }
@@ -118,7 +118,7 @@
         color: $color-black;
         padding-bottom: 1rem;
     }
-    
+
     &__small {
         font-size: 1.5rem;
         color: $color-black;
@@ -182,7 +182,7 @@
         border-radius: 3px;
         padding: 1rem 2rem;
         transition: all .5s;
-    
+
         &:hover {
             cursor: pointer;
             transform: scale(1.1);
@@ -206,14 +206,14 @@
     }
 }
 
-//CARD 
+//CARD
 .card {
-    width: 25rem;
+    width: 30rem;
     background-color: rgba($color-white, .95);
     border-radius: 3px;
     box-shadow: $shadow;
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
     transition: all .5s;
 
     @media only screen and (max-width: $bp-medium) {
@@ -232,7 +232,7 @@
 .btn {
     background-color: $color-main;
     color: $color-white;
-    padding: 1rem 0 2.5rem 0;
+    padding: 1rem 0;
 
     &:link,
     &:visited {
@@ -242,7 +242,10 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-        font-size: 2rem;  
+        font-size: 2rem;
+        @media only screen and (max-width: $bp-small) {
+            font-size: 0.5rem;
+        }
     }
 
     &:hover {
